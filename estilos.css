@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #31e80d;
+}
+
+header {
+    position: relative;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px; /* separación controlada */
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #999;
+    font-family: 'Times New Roman';
+}
+
+.titulo {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ICONOS */
+.icons {
+    margin-left: auto;
+    margin-right: 70px; /* los empuja más a la derecha */
+    display: flex;
+    gap: 70px; /* más separación entre iconos */
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 2px dashed #999;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+.icon span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Hover */
+.icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* DROPDOWN */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 150px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* MAIN */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.imagen-principal {
+    width: 60%;
+    height: 450px;
+    border: 2px dashed #999;
+    position: relative;
+    top: -40px;
+    margin: 0 auto;
+}
+
+.descripcion {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.descripcion ul {
+    padding-left: 20px;
+}
+
+.descripcion li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.card {
+    width: 350px;
+    height: 280px;
+    border: 2px dashed #999;
+    overflow: hidden;
+}
+
+/* la imagen dentro de la card */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* REQUISITOS */
+.requisitos {
+    margin-top: 40px;
+}
+
+.requisitos h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    border: 2px dashed white;
+    border-radius: 50%;
+}
+
+/* IMÁGENES */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  /////////////////////// noticias.html ///////////////////////////// */
+/* SECCIÓN NOTICIAS */
+.noticias {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.noticias h1 {
+    font-size: 60px;
+    margin-top: -60px; /* súbelo más */
+    margin-bottom: 20px;
+}
+
+/* Imagen representativa */
+.imagen-representativa {
+    width: 60%;
+    height: auto;
+    margin: 0 auto 20px auto; /* centra horizontalmente */
+}
+
+/* Imagen dentro */
+.imagen-representativa img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* centra la imagen dentro del contenedor */
+}
+
+/* NOTICIAS */
+.noticia {
+    margin-bottom: 40px;
+}
+
+/* Encabezado (titulo + fecha) */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado h2 {
+    font-size: 35px;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Texto */
+.noticia p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+    max-width: 900px;
+}
+
+/* Línea divisoria */
+hr {
+    margin: 30px 0;
+    border: 1px solid #999;
+}
+
+/*  /////////////////////// desarrolladores.html ///////////////////////////// */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #31e80d;
+}
+
+/* SECCIÓN */
+.desarrolladores {
+    padding-top: 0;
+    margin-top:-100px; /* sube toda la sección */
+}
+
+/* TÍTULO */
+.desarrolladores h1 {
+    font-size: 50px;
+    margin-top: 0; /* quitamos negativos */
+    margin-bottom: 20px;
+}
+
+/* SUBTÍTULO */
+.desarrolladores h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.desarrolladores p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* EQUIPO */
+.equipo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.miembro {
+    width: 250px;
+}
+
+/* IMÁGENES (ARREGLADO) */
+.miembro img {
+    width: 100%;
+    height: 200px; /* tamaño uniforme */
+    object-fit: contain; /* evita recorte */
+    border-radius: 10px;
+    background-color: #fff; /* opcional para relleno */
+}
+
+/* NOMBRE */
+.miembro h3 {
+    margin-top: 10px;
+}
+
+/*  /////////////////////// registro.html ///////////////////////////// */
+
+/* Contenedor del formulario */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Formulario */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Inputs y textarea */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Botón */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+.tabla-container {
+    margin: 40px auto;
+    width: 80%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2e7d32;
+    color: white;
+}
